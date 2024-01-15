@@ -1,0 +1,185 @@
+/* GENERAL STUFF */
+@font-face {
+    font-family: "Nexa-Heavy";
+    src: url("Assets/fonts/nexa-heavy-webfont.woff2") format("woff2"),
+         url("Assets/fonts/nexa-heavy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "overpass-regular";
+    src: url("Assets/fonts/Overpass-Regular.woff2") format("woff2"),
+         url("Assets/fonts/Overpass-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.1) ;
+    z-index: 200;
+    padding: 0 20px;
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: #6a8ed1;
+}
+
+ul {
+    font-family: "overpass-regular";
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    
+    color: white;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 60px; /* Adjust according to your header height */
+    right: -100%; /* Starts from the right out of the view */
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    transition: right 0.5s ease-out; /* This controls the speed of the slide in/out effect */
+    
+    display: flex; /* Always show, but out of view when not "open" */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px; /* Add some padding if you like */
+    max-height: 110px; /* Control height here */
+    overflow: hidden; /* Allow scrolling if content is more than the height */
+}
+
+.open .mobile-menu {
+    right: 0; /* When open, it's in view */
+}
+
+@media only screen and (max-width:600px) {
+    header nav{
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+.logo {
+    
+    width: 150px; /* or specify a width like 50px */
+    height: 60px; /* or specify a height like 50px */
+    padding: 10px;
+}
+#brand a {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+footer p{
+    font-family: "overpass-regular";
+    padding: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer p {
+        margin-bottom: 5px;
+    }
+    footer .sep {
+        display: none;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset = "UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./Assets/Images/icon.ico">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="./CSS/home.css"/>
+        <title>SkyScape Drone Photography</title>
+    </head>
+    <body>
+        <header>
+            <div id="brand"><a href="home.html"><img class="logo" src="./Assets/Images/logo-dark.png" alt="Skyscape Logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <ul class="mobile-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- An image to show my work. Maybe change to a video later? -->
+        <div class="fullscreen-image-container">
+            <img id="mainBackgroundImg" src="./Assets/Images/display-photo-low.jpg" alt="" >
+            <div class="overlay-text">
+                <h1>PROFESSIONAL MELBOURNE DRONE PHOTOGRAPHY</h1>
+                <!-- <a href="contact.html" class="action-button">Contact Us!</a> -->
+            </div>
+        </div>
+
+        <!-- Three bits of info to break it up-->
+        <div class="box-info-containers">
+            <div class="text-container">
+                <h3>CONSTRUCTION PROGRESS</h3>
+                <p>Construction progress captured with high-resolution aerial imagery and video allows for a unique perspective. Track project milestones with precision.</p>
+            </div>
+            <div class="text-container">
+                <h3>PRESENT YOUR PROGRESS</h3>
+                <p>Capture stunning visuals from unique perspectives, showcasing your project in the best possible light for promotional materials or client presentations.</p>
+            </div>
+            <div class="text-container">
+                <h3>LOCALLY BASED</h3>
+                <p>Founded in Melbourne, Skyscape pilots are familliar with the local regulations and guidelines. Close proximity allows for efficient and timely project coordination.</p>
+            </div>
+        </div>
+
+        <!-- More photos arranged in grid-->
+        <div class="grid-container">
+            <div class="photogrid">
+                <a href="./Assets/Images/grid/Aeroklas Photo 2.JPG" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/Aeroklas.png" alt="" id="img1">
+                </a>
+                <a href="./Assets/Images/grid/Gateway_-_Stage_6_Photo_2.JPG" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/Gateway.png" alt="" id="img2">
+                </a>
+                <a href="./Assets/Images/grid/M80_Connect_Photo_11.JPG" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/M80.png" alt="" id="img3" >
+                </a>
+                <a href="./Assets/Images/grid/Site View - D1 -Photos 1 of 17 - INSITU -THORNHILL PARK -D1 - 19-05-23.JPG" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/Thornhill.png" alt="" id="img4">
+                </a>
+                <a href="./Assets/Images/grid/Site View - D1 -Photos 9 of 11 - DEV-MOR-DA - 23-03-23.jpg" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/Mornington.png" alt="" id="img5">
+                </a>
+                <a href="./Assets/Images/grid/Site View - D2-Photos 14 of 23 - 2Construct PT MELBOURNE - 18-03-23.JPG" target="_blank" rel="noreferrer noopener">
+                    <img src="./Assets/Images/grid/thumbnails/National Tiles.png" alt="" id="img6">
+                </a>
+            </div>
+        </div>
+        
+
+        <!-- A carosel of clients -->
+
+        <div class="clients">
+            <h2>EXPERIENCED WORKING WITH</h2>
+            <div class="carousel">
+                <a href="https://www.siteview.com.au/" target="_blank" rel="noreferrer noopener">
+                    <div class="slide">
+                        <img src="./Assets/Images/logos/siteview.png" alt="siteview">
+                    </div>
+                </a>
+                <!-- <a href="https://www.2construct.com.au/" target="_blank" rel="noreferrer noopener">
+                    <div class="slide">
+                        <img src="logos/2Construct.png" alt="2Construct">
+                    </div>
+                </a> -->
+                <a href="https://www.texco.net.au/" target="_blank" rel="noreferrer noopener">
+                    <div class="slide">
+                        <img src="./Assets/Images/logos/texco-white.png" alt="Texco">
+                    </div>
+                </a>
+                <!-- <a href="https://www.insituconstruction.net.au/" target="_blank" rel="noreferrer noopener">
+                    <div class="slide">
+                        <img src="logos/insitu.png" alt="insitu">
+                    </div>
+                </a> -->
+                <a href="https://www.fdcbuilding.com.au/" target="_blank" rel="noreferrer noopener">
+                    <div class="slide">
+                        <img style="width: 140px" src="./Assets/Images/logos/FDC.png" alt="FDC">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p class="sep">|</p>
+            <p>Phone: 0409 466 685</p>
+            <p class="sep">|</p>
+            <p>Will O'Brien</p>
+            <p class="sep">|</p>
+            <p>Email: skyscape40@gmail.com</p>
+            <p class="sep">|</p>
+
+            
+            <!-- Will O'Brien      | Email: skyscape40@gmail.com</p> -->
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

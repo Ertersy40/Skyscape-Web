@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: hidden;">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./Assets/Images/icon.ico">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./CSS/contactUs.css" />
+        <title>SkyScape Drone Photography</title>
+    </head>
+    <body>
+      <header>
+        <div id="brand"><a href="home.html"><img class="logo" src="./Assets/Images/logo-dark.png" alt="Skyscape Logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+            <ul class="mobile-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </header> 
+        <div class="infowrapper">
+          <div class="contactWrap"><div class="contact-form">
+              <h2>CONTACT US</h2>
+
+              <form action="https://formsubmit.co/e0ef627a38d2b5208c5a0e63c0ba1817" method="POST">
+                <div class="textEntry">
+                  <input type="hidden" name="_next" value="https://skyscapedrones.com/home.html">
+                  <input type="hidden" name="_captcha" value="false">
+                  <div>
+                    <label for="name">Name:</label>
+                    <div class="inputWrapper">
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <div class="inputWrapper">
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="message">Message:</label>
+                    <div class="inputWrapper">
+                      <textarea id="message" name="message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' maxlength="220" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <button type="submit"><b>SUBMIT</b></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contactImg">
+            <img src="./Assets/Images/grid/Gateway_-_Stage_6_Photo_2.JPG" alt="">
+          </div>
+      </div>
+        
+        <footer>
+            <p>|</p>
+            <p>Phone: 0409 466 685</p>
+            <p>|</p>
+            <p>Will O'Brien</p>
+            <p>|</p>
+            <p>Email: skyscape40@gmail.com</p>
+            <p>|</p>
+            
+            <!-- Will O'Brien      | Email: skyscape40@gmail.com</p> -->
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
