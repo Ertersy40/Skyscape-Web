@@ -100,7 +100,7 @@
 
 .inputWrapper {
     max-height: 122px;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     justify-content: flex-end;
     width: 300px;
