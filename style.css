@@ -27,6 +27,8 @@ body {
     background-color: black;
     color: white;
     font-family: sans-serif;
+    position: relative;
+    margin-bottom: 46px;
 }
 
 /* HEADER */
@@ -155,6 +157,10 @@ ul li:hover {
 
 /* Footer */
 footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: -46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,6 +178,7 @@ footer p{
 @media only screen and (max-width:600px) {
 
     footer {
+        margin-bottom: -155px;
         flex-direction: column;
         padding: 10px;
     }

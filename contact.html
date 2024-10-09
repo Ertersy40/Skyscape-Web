@@ -34,38 +34,41 @@
         </div>
       </header> 
         <div class="infowrapper">
-          <div class="contactWrap"><div class="contact-form">
+          <div class="contactWrap">
+            
               <h2>CONTACT US</h2>
-
-              <form action="https://formsubmit.co/e0ef627a38d2b5208c5a0e63c0ba1817" method="POST">
-                <div class="textEntry">
-                  <input type="hidden" name="_next" value="https://skyscapedrones.com/index.html">
-                  <input type="hidden" name="_captcha" value="false">
-                  <div>
-                    <label for="name">Name:</label>
-                    <div class="inputWrapper">
-                      <input type="text" id="name" name="name" required>
-                    </div>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3381e948-c3fe-4fa1-ac6c-d23b69bef54d" />
+                <input type="hidden" name="subject" value="New Website Enquiry" />
+                <input type="checkbox" name="botcheck" style="display: none;" />
+                <div class="card">
+                  <div class="form-group">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" name="name" id="name" required class="form-input" />
                   </div>
-                  <div>
-                    <label for="email">Email:</label>
-                    <div class="inputWrapper">
-                      <input type="email" id="email" name="email" required>
-                    </div>
+                  <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" name="email" id="email" required class="form-input" />
                   </div>
-                  <div>
-                    <label for="message">Message:</label>
-                    <div class="inputWrapper">
-                      <textarea id="message" name="message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' maxlength="220" required></textarea>
-                    </div>
+                  <div class="form-group">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="text" name="phone" id="phone" required class="form-input" />
+                  </div>
+                  <div class="form-group">
+                      <label for="math-answer" class="form-label"><span id="math-question-text"></span></label>
+                      <input type="text" name="math-answer" id="math-answer" required class="form-input" />
+                  </div>            
+                  <div class="form-group message-form">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea rows="1" name="message" id="message" class="form-input" required></textarea>
                   </div>
                 </div>
+                <p id="submission-result"></p>
                 
-                <div>
-                  <button type="submit"><b>SUBMIT</b></button>
+                <div class="form-group">
+                    <button type="submit" class="submit-button">SUBMIT</button>
                 </div>
-              </form>
-            </div>
+            </form>
           </div>
           <div class="contactImg">
             <img src="./Assets/Images/grid/Gateway_-_Stage_6_Photo_2.jpg" alt="">
@@ -84,5 +87,6 @@
             <!-- Will O'Brien      | Email: skyscape40@gmail.com</p> -->
         </footer>
         <script src="script.js"></script>
+        <script src="contact.js"></script>
     </body>
 </html>
