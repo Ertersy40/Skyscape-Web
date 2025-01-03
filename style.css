@@ -1,11 +1,5 @@
 /* GENERAL STUFF */
-@font-face {
-    font-family: "Nexa-Heavy";
-    src: url("Assets/fonts/nexa-heavy-webfont.woff2") format("woff2"),
-         url("Assets/fonts/nexa-heavy-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+
 @font-face {
     font-family: "overpass-regular";
     src: url("Assets/fonts/Overpass-Regular.woff2") format("woff2"),
